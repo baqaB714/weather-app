@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("../fonts/BYekan-webfont.eot") format("eot"), url("../fonts/BYekan-webfont.woff") format("woff"), url("../fonts/BYekan-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* html,
+#root {
+    height: 100%;
+} */
+
+body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 167, 36, 0.432) 0%, rgba(0, 0, 0, 0.445) 100%), url(/assets/images/backwidth.jpg) no-repeat  ;
+    /* background-size: cover; */
+}
+
+* {
+    font-family: BYekan;
+    /* direction: rtl;
+    text-align: right; */
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background: linear-gradient(90deg, rgba(9, 187, 104, 0.301) 0%, rgba(97, 239, 255, 0.295) 100%), url(/assets/images/backHeight.jpg);
+        background-size: cover;
+
+    }
+
+}
