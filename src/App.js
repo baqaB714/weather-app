@@ -1,14 +1,14 @@
 import './App.css';
+import DateTime from './components/DateTime';
+import Emoji from './components/Emoji';
 import Weather from './components/Weather';
 
 function App() {
   return (
-    <div className="App flex justify-center flex-col items-center backgroundNormal2 w-full h-lvh">
+    <div className="App flex justify-center flex-col items-center backgroundCold w-full h-lvh">
       <Weather />
-      <div className='w-full flex justify-center'>
-          <img className='w-20' src='/assets/images/emojiN.png'>
-          </img>
-      </div>
+      <DateTime/>
+      <Emoji/>
     </div>
   );
 }

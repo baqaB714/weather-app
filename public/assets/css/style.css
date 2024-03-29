@@ -19,19 +19,22 @@ body {
 }
 
 .backgroundCold {
-    background: linear-gradient(90deg, rgba(0, 167, 36, 0) 0%, rgba(0, 0, 0, 0.096) 100%) , url(/assets/images/BackCold.jpg) no-repeat;
+    background: linear-gradient(90deg, rgba(0, 167, 36, 0) 0%, rgba(0, 0, 0, 0.096) 100%), url(/assets/images/BackCold.jpg) no-repeat;
     background-size: cover;
 }
+
 .backgroundNormal1 {
-    background: linear-gradient(90deg, rgba(5, 184, 255, 0.336) 0%, rgba(20, 220, 255, 0.13) 100%) , url(/assets/images/BackNormal.jpg) no-repeat;
+    background: linear-gradient(90deg, rgba(5, 184, 255, 0.199) 0%, rgba(20, 220, 255, 0.13) 100%), url(/assets/images/BackNormal.jpg) no-repeat;
     background-size: cover;
 }
+
 .backgroundNormal2 {
-    background: linear-gradient(90deg, rgba(2, 255, 57, 0.253) 0%, rgba(235, 252, 7, 0.247) 100%) , url(/assets/images/BackNormal.jpg) no-repeat;
+    background: linear-gradient(90deg, rgba(2, 255, 57, 0.13) 0%, rrgba(236, 252, 7, 0.123)100%), url(/assets/images/BackNormal.jpg) no-repeat;
     background-size: cover;
 }
+
 .backgroundHot {
-    background: linear-gradient(90deg, rgba(200, 255, 0, 0.582) 0%, rgba(252, 0, 0, 0.144) 100%) , url(/assets/images/BackHot.jpg) no-repeat;
+    background: linear-gradient(90deg, rgba(200, 255, 0, 0.582) 0%, rgba(252, 0, 0, 0.144) 100%), url(/assets/images/BackHot.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -42,7 +45,35 @@ body {
 }
 
 
-@media only screen and (max-width: 768px) {
-
-
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation:  App-logo-rotate infinite 3s linear;
+    }
 }
+
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes App-logo-rotate {
+    from {
+        transform: rotatey(0deg);
+    }
+
+    to {
+        transform: rotatey(360deg);
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {}
