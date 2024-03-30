@@ -49,17 +49,21 @@ body {
     .App-logo {
         animation:  App-logo-rotate infinite 3s linear;
     }
+    .App-logo2 {
+        animation:  App-logo-spin infinite 1.5s linear;
+    }
+
 }
 
 
 
 @keyframes App-logo-spin {
     from {
-        transform: rotate(0deg);
+        transform: scale(0.5);
     }
 
     to {
-        transform: rotate(360deg);
+        transform: scale(2);
     }
 }
 
