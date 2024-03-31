@@ -27,19 +27,22 @@ const yearMonth = [
 
 
 const DateTime = () => {
-    const [date , setDate] = useState('')
-    const [time , setTime] = useState('')
+    const [date, setDate] = useState('')
+    const [time, setTime] = useState('')
 
-    useEffect(()=>{
+
+    useEffect(() => {
         let m = moment()
-        console.log(m.format("jYYYY/jM/jD"));
-    } , []);
-    
+        let finalDate = `${weekDays[m.day()]} ${m.jDate()} ${yearMonth[m.jMonth()]} ماه ${m.jYear()}`
+        setDate(finalDate)
+        setTime(m.format("HH:mm"))
+    }, []);
+
     return (
         <div className='w-full md:w-1/3 px-2 my-3'>
             <div className='bg-[#3f0e527c] text-2xl rounded-2xl p-2 '>
-                <div className='text-white drop-shadow-[0px_0px_3px_rgba(0,0,0,1)]'>دوشنبه 13 فروردین 1403</div>
-                <div className='text-white drop-shadow-[0px_0px_3px_rgba(0,0,0,1)]'>ساعت 15:00</div>
+                <div className='text-white drop-shadow-[0px_0px_3px_rgba(0,0,0,1)]'>{date}</div>
+                <div className='text-white drop-shadow-[0px_0px_3px_rgba(0,0,0,1)]'>ساعت : {time}</div>
             </div>
         </div>
     );
