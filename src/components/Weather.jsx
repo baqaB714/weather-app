@@ -1,6 +1,11 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Weather = () => {
+    const{loading , data , error} = useSelector(state=>state);
+    console.log(loading , data , error);
+
+
     return (
         <div className='flex flex-col items-center w-full md:w-1/3 justify-center'>
             <div className='flex w-full justify-center'>
