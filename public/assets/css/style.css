@@ -45,6 +45,7 @@ body {
 }
 
 
+
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation:  App-logo-rotate infinite 3s linear;
@@ -54,8 +55,6 @@ body {
     }
 
 }
-
-
 
 @keyframes App-logo-spin {
     from {
