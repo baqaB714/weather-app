@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 const Weather = () => {
     const{loading , data , error} = useSelector(state=>state);
-    console.log(loading);
+    console.log(loading , data);
 
 
     return (
