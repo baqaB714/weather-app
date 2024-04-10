@@ -31,3 +31,5 @@ const getWeatherInfo = (query) => {
         })
     }
 }
+
+export default getWeatherInfo;

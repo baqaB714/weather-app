@@ -1,9 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 const Weather = () => {
     const{loading , data , error} = useSelector(state=>state);
-    console.log(loading , data);
+    const dispatch = useDispatch()
+    console.log(5555);
 
 
     return (
