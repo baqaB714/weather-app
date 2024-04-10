@@ -51,7 +51,8 @@ body {
         animation:  App-logo-rotate infinite 3s linear;
     }
     .App-logo2 {
-        animation:  App-logo-spin infinite 1.5s linear;
+        animation:  App-logo-spin infinite 3s linear;
+        
     }
 
 }
@@ -59,10 +60,12 @@ body {
 @keyframes App-logo-spin {
     from {
         transform: scale(0.5);
+        /* color: rgb(255, 255, 255); */
     }
 
     to {
         transform: scale(2);
+        /* color: rgba(255, 255, 255, 0.486); */
     }
 }
 
